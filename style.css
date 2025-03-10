@@ -1,40 +1,24 @@
-/* styles.css */
-
-/* General Styles */
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* Header Styles */
-header {
+header, footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 1em 0;
-    border-bottom: 5px solid #ff6347;
+    padding: 1em;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-/* Navbar Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
@@ -42,191 +26,50 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ff6347;
-}
-
-/* Section Styles */
 section {
     padding: 20px;
     max-width: 900px;
-    margin: 20px auto;
+    margin: auto;
     background: white;
+    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-section h2 {
-    color: #333;
-    border-bottom: 2px solid #ff6347;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
-/* About Section */
-#about img {
+img {
     max-width: 150px;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-    border: 3px solid #ff6347;
 }
 
-#about p {
-    text-align: center;
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Skills Section */
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills ul li {
-    background: #f4f4f4;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    color: #333;
-}
-
-/* Certifications Section */
-#certifications ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#certifications ul li {
-    background: #f4f4f4;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    color: #333;
-}
-
-/* Education Section */
-#education ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#education ul li {
-    background: #f4f4f4;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    color: #333;
-}
-
-/* Experience Section */
-#experience table {
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-#experience th, #experience td {
-    border: 1px solid #ddd;
+table, th, td {
+    border: 1px solid black;
     padding: 10px;
     text-align: left;
 }
 
-#experience th {
-    background: #333;
-    color: white;
-}
-
-#experience tr:nth-child(even) {
-    background: #f4f4f4;
-}
-
-/* Resume Section */
-#resume p {
-    text-align: center;
-}
-
-#resume a {
-    color: #ff6347;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-#resume a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Section */
-#contact form {
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#contact label {
-    font-weight: bold;
-    color: #333;
-}
-
-#contact input, #contact textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-#contact button {
+button {
     background: #333;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.1em;
-    transition: background 0.3s ease;
 }
 
-#contact button:hover {
-    background: #ff6347;
-}
-
-/* Footer Styles */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 20px;
-    border-top: 5px solid #ff6347;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1em;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 15px;
-    }
-
-    #about img {
-        max-width: 120px;
-    }
+button:hover {
+    background: #555;
 }
